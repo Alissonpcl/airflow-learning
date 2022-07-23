@@ -4,7 +4,7 @@ Como executo o Airflow em Docker, as bibliotecas não estarão disponíveis para
 
 Para resolver isso basta instalar o Airflow no ambiente local de desenvolvimento, fora do container.
 
-O script [create_venv_with_airflow.sh](create_venv_with_airflow.sh) faz exatamente isso. 
+O script [create_venv_with_airflow.sh](new_structure/create_venv_with_airflow.sh) faz exatamente isso. 
 
 Depois é só configurar a IDE para pegar o interpreter dessa venv.
 
