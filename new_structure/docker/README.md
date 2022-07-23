@@ -1,7 +1,6 @@
 ## Starting the container
 
-The current yaml file in this repo is customized the use the correct path for local folders (dags, plugins, logs).
-At the beginning of the file you can find comments about the changes that were made. 
+> The current yaml file in this repo is customized. At the beginning of the file you can find comments about the changes that were made.
 
 ```shell
 # Download the yaml file 

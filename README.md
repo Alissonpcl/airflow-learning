@@ -1,11 +1,18 @@
-# Para criacao de DAGs
+# Steps to start the Service
 
-Como executo o Airflow em Docker, as bibliotecas não estarão disponíveis para desenvolvimento e as IDEs ficarão acusando erros nos imports na hora de programar as DAGs.
+1. Follow the steps in docker/README.MD
+2. Write/Edit Dags in dags folder
 
-Para resolver isso basta instalar o Airflow no ambiente local de desenvolvimento, fora do container.
+# Writing DAGs using Intellij
 
-O script [create_venv_with_airflow.sh](new_structure/create_venv_with_airflow.sh) faz exatamente isso. 
+As Airflow is executed in a container we don't need to install it locally. However, it Intellij requires it to be
+installed locally to find the packes used during the DAGs development for code intellisense.
 
-Depois é só configurar a IDE para pegar o interpreter dessa venv.
+To solve it just install the libraries locallyt using one of the scripts below:
+
+- Linux/MacOs -> [create_venv_with_airflow.sh](new_structure/create_venv_with_airflow.sh)
+- Windows -> [create_venv_with_airflow-windows.ps1](create_venv_with_airflow-windows.ps1)
+
+Then configure IDE with the proper Interpreter.
 
 [Intellij - Configure a system interpreter](https://www.jetbrains.com/help/idea/configuring-local-python-interpreters.html)

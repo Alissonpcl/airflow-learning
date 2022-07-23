@@ -1,8 +1,10 @@
+#!/bin/bash
+
 echo "Create a local virtualenv"
-python3 -m venv .env
+python3 -m venv .myenv
 
 echo "Activating env"
-source .env/bin/activate
+source ./.myenv/bin/activate
 
 AIRFLOW_HOME=$(pwd)/airflow
 export AIRFLOW_HOME
@@ -20,4 +22,4 @@ CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${A
 echo "CONSTRAINT_URL=${CONSTRAINT_URL}"
 
 echo "Installing Airflow package"
-pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+pip install --default-timeout=1000 "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
