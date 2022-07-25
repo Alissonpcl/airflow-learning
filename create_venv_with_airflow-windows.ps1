@@ -1,8 +1,8 @@
 echo "Create a local virtualenv"
-python3 -m venv .myenv2
+python3 -m venv .myenv
 
 echo "Activating env"
-.myenv2\Scripts\Activate.ps1
+.myenv\Scripts\Activate.ps1
 
 Set-Variable -Name AIRFLOW_HOME -Value "C:\Users\Alisson Lima\Documents\cursos\airflow-learning\new_structure"
 echo "AIRFLOW_HOME=${AIRFLOW_HOME}"

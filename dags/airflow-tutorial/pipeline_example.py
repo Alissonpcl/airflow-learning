@@ -1,3 +1,7 @@
+"""
+Created following the example in https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html#pipeline-example
+"""
+
 import datetime
 import pendulum
 import os
