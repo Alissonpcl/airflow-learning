@@ -21,3 +21,8 @@ Then configure IDE with the proper Interpreter.
 It is also required to install the dependencies in [requirements.txt](requirements.txt) file. It is required because
 some packages, like the Airflow PostgreSQL provider, that comes with the Airflow Docker version need to be available in
 local env to.
+
+# About Airflow
+
+[Click here](https://magnificent-mascara-e4a.notion.site/Airflow-5c80f9d963864bcab6ddf96ed8b91bea) to open my personal
+documentation about Airflow. 

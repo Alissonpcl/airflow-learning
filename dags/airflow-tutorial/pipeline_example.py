@@ -1,5 +1,16 @@
 """
 Created following the example in https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html#pipeline-example
+
+A connection with the details below need to be created to
+run this task successfully
+
+Connection Id: tutorial_pg_conn
+Connection Type: postgres
+Host: postgres
+Schema: airflow
+Login: airflow
+Password: airflow
+Port: 5432
 """
 
 import datetime
@@ -57,7 +68,7 @@ def Etl():
 
     @task
     def merge_data():
-        f = open("/opt/airflow/dags/sql/insert_employees.sql")
+        f = open("/opt/airflow/dags/airflow-tutorial/sql/insert_employees.sql")
         query = f.readlines()
         f.close()
 
