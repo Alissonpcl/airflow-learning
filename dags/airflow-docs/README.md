@@ -1,0 +1,1 @@
+DAGs in this folder were created during my personal studies of Airflow official documentation.
