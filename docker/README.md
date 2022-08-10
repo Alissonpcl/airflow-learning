@@ -3,7 +3,7 @@
 > The current yaml file in this repo is customized. At the beginning of the file you can find comments about the changes that were made.
 
 ```shell
-# Download the yaml file 
+# Download the yaml file  (already in this repo)
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.3.1/docker-compose.yaml'
 
 # Create the local directories
