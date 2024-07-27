@@ -6,6 +6,11 @@
 
 Many of the steps below were done using [Lens](https://k8slens.dev/).
 
+## Create a namespace for Airflow
+```bash
+kubectl create namespace airflow 
+```
+
 ## Configure DAGs location
 
 ### Create a PV and PVC to Dags folders (for local folder)
