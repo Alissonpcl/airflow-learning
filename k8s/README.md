@@ -78,3 +78,9 @@ To access the database outside the Cluster and monitor its usage by Airflow do t
 2. data > metadataConnection
    1. Set the database connection string, username and password
    2. If the database is running inside the cluster the host can be an SVC name (eg.: postgres-dev-postgresql.default.svc.cluster.local)
+
+# Uninstalling Airflow
+
+```bash
+helm uninstall airflow --namespace airflow 
+```
